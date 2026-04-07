@@ -1,0 +1,26 @@
+# Core Scientific Computing
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+
+# Deep Learning & Computer Vision
+torch>=2.5.1
+torchvision>=0.20.1
+
+# Machine Learning & Utilities
+scikit-learn==1.8.0
+joblib==1.5.3
+
+# Visualization
+matplotlib==3.10.8
+pillow==12.1.1
+
+# Jupyter & Notebooks
+jupyter>=1.0.0
+ipython>=9.0.0
+notebook>=7.0.0
+ipykernel>=7.0.0
+
+# Utilities
+PyYAML>=6.0
+python-dateutil>=2.9.0

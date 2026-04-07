@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiot-mnist-streaming"
+version = "0.1.0"
+description = "Industry-style streaming AIoT MNIST simulation project"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy==2.4.4",
+  "pandas==3.0.2",
+  "scipy==1.17.1",
+  "torch>=2.5.1",
+  "torchvision>=0.20.1",
+  "scikit-learn==1.8.0",
+  "joblib==1.5.3",
+  "matplotlib==3.10.8",
+  "pillow==12.1.1",
+  "jupyter>=1.0.0",
+  "ipython>=9.0.0",
+  "notebook>=7.0.0",
+  "ipykernel>=7.0.0",
+  "PyYAML>=6.0",
+  "python-dateutil>=2.9.0",
+]
+
+[project.scripts]
+aiot-mnist-streaming = "aiot_mnist_streaming.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+line-length = 120
